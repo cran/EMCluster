@@ -1,6 +1,6 @@
 d791728a073bc009b4ffaf00b7599855 *COPYING
 934883cdb7862cbc54140e13da04c4f4 *ChangLog
-56e9d2783f7d9fa51e53799f574f4b43 *DESCRIPTION
+b5a5fec3551f769ba891ef8531fb346e *DESCRIPTION
 929c37e9546258e54bd926d697b7b1b7 *INSTALL
 251460aca62c0ab91f21bd00ba096781 *NAMESPACE
 821d606226f14cb20a25914bd4f838ed *R/00_control.r
@@ -24,7 +24,6 @@ a0fc752da804e01474529ee2d556770a *R/fcn_plot.r
 e0795f51ff5dd90faddc828faffbf548 *R/fcn_summary.r
 9203c7d068a6d432bc75bef72b5efe0c *R/zzz.r
 ad0d7892282061cd4b99b9297a4279ff *cleanup
-d41d8cd98f00b204e9800998ecf8427e *dE
 9df79209c2288f575355413fb29f5851 *data/EMC.rda
 55f8a638a9283a45d1fe905d0ed1672e *data/da1.rda
 c15a9c8825ac3e20e7311c56cce52e58 *data/da2.rda
@@ -39,9 +38,9 @@ fbfa052a212135c0cd9f16c36531d527 *demo/emcluster.r
 1cccd840fa45d5498a4e4688efd56380 *demo/myiris.r
 096518e2721b7d7a7f8535a4a5d96198 *demo/shortem.r
 53d97eac9c26aa30d2c9b0a2dcd74041 *demo/starts_via_svd.r
-c60eb70b9945d0a0b1a27ea7b0d9ba07 *inst/CITATION
-3ff7cfdfabead51800c18a71f2ca7c3f *inst/doc/EMCluster-guide.Rnw
-4c7f9b1e97db67fb412c04f934794978 *inst/doc/EMCluster-guide.pdf
+4a8808a508edbc822ecfa1c4696de2b1 *inst/CITATION
+736d845197dc701720999d3566bba87b *inst/doc/EMCluster-guide.Rnw
+d74e38bb1929001769d3ef3edf0226cc *inst/doc/EMCluster-guide.pdf
 2d34a2edb45eb9d9f55d6e253fc6bb39 *inst/doc/EMCluster-include/00-defs.tex
 6e3ca1e66839ff78adb64b3c76cbbfb7 *inst/doc/EMCluster-include/00-preamble.tex
 c5cc51d44b819ebc970190570e42dda2 *inst/doc/EMCluster-include/01-acknowledgement.tex

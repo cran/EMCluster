@@ -1,6 +1,6 @@
 Package: EMCluster
-Version: 0.2-0
-Date: 2012-12-11
+Version: 0.2-1
+Date: 2012-12-12
 Title: EM Algorithm for Model-Based Clustering of Finite Mixture
         Gaussian Distribution
 Authors@R: c(person("Wei-Chen", "Chen", role = c("aut", "cre"), email =
@@ -15,9 +15,9 @@ Description: EMCluster provides EM algorithms and several efficient
         both of unsupervised and semi-supervised learnings.
 License: GPL (>= 2)
 URL: http://maitra.public.iastate.edu/
-Packaged: 2012-12-12 00:53:14 UTC; snoweye
+Packaged: 2012-12-12 17:36:09 UTC; snoweye
 Author: Wei-Chen Chen [aut, cre], Ranjan Maitra [aut], Volodymyr
         Melnykov [aut]
 Maintainer: Wei-Chen Chen <wccsnow@gmail.com>
 Repository: CRAN
-Date/Publication: 2012-12-12 08:01:49
+Date/Publication: 2012-12-12 20:33:40
