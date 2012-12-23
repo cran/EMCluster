@@ -1,7 +1,11 @@
 useDynLib(EMCluster)
 
 exportPattern("^[[:alpha:]]+")
-exportPattern("^[\\.]")
+# exportPattern("^[\\.]")
+
+export(
+  .EMControl
+)
 
 S3method(print, emret)
 S3method(summary, emret)
