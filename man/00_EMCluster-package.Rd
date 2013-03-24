@@ -7,7 +7,7 @@
   EMCluster provides EM algorithms and several efficient
   initialization methods for model-based clustering of finite
   mixture Gaussian distribution with unstructured dispersion
-  in both of unsupervised and semi-supervised clusterings.
+  in both of unsupervised and semi-supervised clustering.
 }
 \details{
 \tabular{ll}{
@@ -33,8 +33,8 @@
   \url{http://maitra.public.iastate.edu/}
 }
 \author{
-  Wei-Chen Chen \email{wccsnow@gmail.com}, Volodymyr Melnykov, and
-  Ranjan Maitra.
+  Wei-Chen Chen \email{wccsnow@gmail.com}, Ranjan Maitra, and
+  Volodymyr Melnykov.
 }
 \seealso{
   \code{\link{init.EM}}, \code{\link{emcluster}}.
