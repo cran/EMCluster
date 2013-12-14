@@ -14,9 +14,10 @@ plotmd <- function(x, class = NULL, xlab = "Variables", ylab = "Data", ...){
 #    color.my <- c("#00EEEEFF", "#A0EEEEFF", "#AAC6EEFF", "#EEC6BBFF",
 #                  "#EE66EEFF", "#DEAA00FF", "#EECF5EFF", "grey65", "grey80",
 #                  "#60FF00FF", "#C9FF00FF")
-    color.my <- c("#00EEEEFF", "#AAC6EEFF", "#EE66EEFF", "#EEC6BBFF", "grey65",
-                  "#60FF00FF", "#A0EEEEFF", "#EECF5EFF", "grey80", "#DEAA00FF",
-                  "#C9FF00FF")
+    # color.my <- c("#00EEEEFF", "#AAC6EEFF", "#EE66EEFF", "#EEC6BBFF",
+    #               "grey65", "#60FF00FF", "#A0EEEEFF", "#EECF5EFF", "grey80",
+    #               "#DEAA00FF", "#C9FF00FF")
+    color.my <- color.class
     color <- color.my[class %% length(color.my) + 1]
 
     tmp <- apply(cbind(color, x), 1,
