@@ -71,15 +71,14 @@ exhaust.EM(x, nclass = 1, lab = NULL,
   \url{http://maitra.public.iastate.edu/}
 }
 \author{
-  Wei-Chen Chen \email{wccsnow@gmail.com}, Ranjan Maitra, and
-  Volodymyr Melnykov.
+  Wei-Chen Chen \email{wccsnow@gmail.com} and Ranjan Maitra.
 }
 \seealso{
   \code{\link{emcluster}}, \code{\link{.EMControl}}.
 }
 \examples{
 \dontrun{
-library(EMCluster, quiet = TRUE)
+library(EMCluster, quietly = TRUE)
 set.seed(1234)
 x <- da1$da
 

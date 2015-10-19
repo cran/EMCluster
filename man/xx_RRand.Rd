@@ -29,12 +29,11 @@ RRand(trcl, prcl, lab = NULL)
   \url{http://maitra.public.iastate.edu/}
 }
 \author{
-  Wei-Chen Chen \email{wccsnow@gmail.com}, Ranjan Maitra, and
-  Volodymyr Melnykov.
+  Wei-Chen Chen \email{wccsnow@gmail.com} and Ranjan Maitra.
 }
 \examples{
 \dontrun{
-library(EMCluster, quiet = TRUE)
+library(EMCluster, quietly = TRUE)
 
 true.id <- c(1, 1, 1, 2, 2, 2, 3, 3, 3)
 pred.id <- c(2, 1, 2, 1, 1, 1, 2, 1, 1)

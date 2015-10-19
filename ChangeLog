@@ -1,3 +1,31 @@
+2015-10-19: Ver. 0.2-5
+  * Fix an adjR seg. fault.
+  * Add recolor().
+
+2015-07-18: Ver. 0.2-5
+  * Several changes.
+  * Rename partial.logL() to partial.q() and change all other caller functions.
+  * Add partial.logL().
+  * Add logitPI = TRUE to partial.q() and partial.logL().
+  * Normalize pi at the end of EM for functions returning emobj.
+  * Add log = FALSE to dmixmvn().
+  * Add Jaccard.Index().
+  * Change man pages.
+  * Change authorship.
+
+2015-07-05: Ver. 0.2-5
+  * Add logit post I information.
+
+2015-03-07: Ver. 0.2-5
+  * Fix typos and problems of new version of R.
+  * Change lmt options.
+
+2013-01-13: Ver. 0.2-5
+  * Fix more lmt and ppcontour plotting bugs.
+
+2013-01-03: Ver. 0.2-5
+  * Add and test lmt and ppcontour.
+
 2013-12-14: Ver. 0.2-4
   * Move vignettes.
 

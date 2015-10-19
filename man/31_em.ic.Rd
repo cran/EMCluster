@@ -44,15 +44,14 @@ em.icl.bic(x, emobj = NULL, pi = NULL, Mu = NULL, LTSigma = NULL)
   \url{http://maitra.public.iastate.edu/}
 }
 \author{
-  Wei-Chen Chen \email{wccsnow@gmail.com}, Ranjan Maitra, and
-  Volodymyr Melnykov.
+  Wei-Chen Chen \email{wccsnow@gmail.com} and Ranjan Maitra
 }
 \seealso{
   \code{\link{init.EM}}.
 }
 \examples{
 \dontrun{
-library(EMCluster, quiet = TRUE)
+library(EMCluster, quietly = TRUE)
 x2 <- da2$da
 
 emobj <- list(pi = da2$pi, Mu = da2$Mu, LTSigma = da2$LTSigma)
