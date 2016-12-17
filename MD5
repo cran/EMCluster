@@ -1,6 +1,6 @@
 e879eaad64aab8e1f8e63e298f5cea28 *COPYING
-e92708e72afe06d1f305a7b37ed7b2e8 *ChangeLog
-63f9b8a0183de3195dbe229aa9f8adfb *DESCRIPTION
+40fbb83ed3fa1887f831731e84744ee1 *ChangeLog
+71e199d58185d28265558510d4b0c613 *DESCRIPTION
 0da2d393f20258e1d10d13df53de3ad3 *INSTALL
 9a3b23bbd65131fa55ba5703e342da5a *NAMESPACE
 0f47a8e6731a11682a7ccec481cca0b8 *R/000_globalVariables.r
@@ -13,13 +13,13 @@ b11a024326a4894cd45ef6b177812c50 *R/fcn_boost_plot2d.r
 6f74ec372bf261f4db88ee02f72d48b4 *R/fcn_boost_tools.r
 3c08f807415ef8c6159b3bfeceea0caa *R/fcn_dlmvnorm.r
 f687b72808bed74270d906918d7ee1a1 *R/fcn_e_step.r
-8f5978a12684db25d09dc42879c7ddb0 *R/fcn_emcluster.r
+819a847c230b2eeca1e2998d658b65c8 *R/fcn_emcluster.r
 9621a5dfe299af61d5eb303c67e6ce56 *R/fcn_emgroup.r
 5d2fff36480d964589b68efd202b0f41 *R/fcn_ic.r
 f5223e21e10ec930dc37eea6b3126541 *R/fcn_init_EM.r
 9c4392fd2f173eb2b5a41459a7639559 *R/fcn_init_other_shortem.r
 5a185da7b5370110f851938f86199edc *R/fcn_init_svd.r
-40c71e1d1708668074aecebdf510c619 *R/fcn_initials.r
+2aebe84057cb20a5ec3681d133029a0e *R/fcn_initials.r
 26527308485763d323e5be7ab7f7efa3 *R/fcn_m_step.r
 d3623d60fd839dce527047e163c3571f *R/fcn_mytool.r
 602e3c9fc2cc433301060d5f9762af13 *R/fcn_plot.r
@@ -33,9 +33,9 @@ fb2bddaccb41bd0cfb99267e19b43779 *R/lmt_q.map.new.r
 9c92d9f48783e1c56bb36ccf666cdabe *R/partial_logL.r
 8dd69523898bdd55f1845f1584bcf67d *R/partial_q.r
 f16eebc3963fc526190671d33cf1db6d *R/post_I_information.r
-4622dae92a4e599f5cba83a1d2f03e44 *R/recolor.r
+71d2d1c9d5a3b447464eb4032f631b7f *R/recolor.r
 99e11cf69954dda1ce031fd443711c3c *R/zzz.r
-15f7984af1b58410a6f3f8544a7b3fad *README
+510e35b7152251d188cf39b4295c27d3 *README.md
 ad0d7892282061cd4b99b9297a4279ff *cleanup
 9df79209c2288f575355413fb29f5851 *data/EMC.rda
 9dab70048bdff5986a308e600725740f *data/color.ppcontour.r
@@ -56,8 +56,8 @@ d1d3d9a77628d658436b49dfb35b4a65 *demo/myiris.r
 096518e2721b7d7a7f8535a4a5d96198 *demo/shortem.r
 53d97eac9c26aa30d2c9b0a2dcd74041 *demo/starts_via_svd.r
 9e60c03543c68c93e189ad71357a4c50 *inst/CITATION
-9fda31d8d7c499cc56e53a97704ce465 *inst/doc/EMCluster-guide.Rnw
-763d62865f8855b88e4012db83202932 *inst/doc/EMCluster-guide.pdf
+f353b54ce36be7ffdd618e2e5c628a93 *inst/doc/EMCluster-guide.Rnw
+a89c96053f27fa43e0863d0c34a1bb28 *inst/doc/EMCluster-guide.pdf
 f655f3975e2bba6cf7b4c8ae68bb0a7d *inst/workflow/crabs/0-run.sh
 3ec2f7319d9061f716739895b91dc174 *inst/workflow/crabs/2-em.Rnd.r
 8d667e287619dd289cf8880663242639 *inst/workflow/crabs/3-adjR.r
@@ -103,7 +103,7 @@ e7f8bea74d7aa203ba8b8dae89ce44ba *man/91_mvn.Rd
 78db390c1e9555a3b74ae98a7dc520e7 *man/a1_plotppcontour.Rd
 fc590257e49ab1db90f8584d1d25e56a *man/xx_Jaccard.Rd
 a42f1b657fe89e2f07b05518703903f5 *man/xx_RRand.Rd
-36fc330d26832ba5810ad71ee3177ed5 *man/xx_recolor.Rd
+15b9809ac9872c00e4f0fa2180df1ccf *man/xx_recolor.Rd
 3f8afa65189f109d70c4a6a6ba3db495 *man/yy_print.summary.Rd
 6e20f770c792b33363246a9906a6bb7b *man/zx_all.post_I_information.Rd
 08bb95848ec036cc355a804976a965ab *man/zy_all.lmt.Rd
@@ -176,7 +176,7 @@ baadbcddfdcd66656b8c2e0c26b72701 *src/ss_mb_rand_EM.c
 5cac50e6636391e8585543f1f870be02 *src/ss_rand_EM.c
 fa66becd8fdea443e7c0d3de3976dd18 *src/svd.c
 7f2dd2240ac44bf3312dec3018926e17 *src/unique.c
-9fda31d8d7c499cc56e53a97704ce465 *vignettes/EMCluster-guide.Rnw
+f353b54ce36be7ffdd618e2e5c628a93 *vignettes/EMCluster-guide.Rnw
 2d34a2edb45eb9d9f55d6e253fc6bb39 *vignettes/EMCluster-include/00-defs.tex
 6e3ca1e66839ff78adb64b3c76cbbfb7 *vignettes/EMCluster-include/00-preamble.tex
 bf291beb24231b74f3d6684fbfa2ad1f *vignettes/EMCluster-include/01-acknowledgement.tex
