@@ -1,6 +1,6 @@
 Package: EMCluster
-Version: 0.2-8
-Date: 2017-08-25
+Version: 0.2-9
+Date: 2018-01-14
 Title: EM Algorithm for Model-Based Clustering of Finite Mixture
         Gaussian Distribution
 Authors@R: c(person("Wei-Chen", "Chen", role = c("aut", "cre"), email =
@@ -20,9 +20,9 @@ BugReports: https://github.com/snoweye/EMCluster/issues
 URL: https://github.com/snoweye/EMCluster
 NeedsCompilation: yes
 Maintainer: Wei-Chen Chen <wccsnow@gmail.com>
-Packaged: 2017-08-25 22:18:35 UTC; snoweye
+Packaged: 2018-01-15 01:47:19 UTC; snoweye
 Author: Wei-Chen Chen [aut, cre],
   Ranjan Maitra [aut],
   Volodymyr Melnykov [ctb]
 Repository: CRAN
-Date/Publication: 2017-08-26 03:43:45 UTC
+Date/Publication: 2018-01-16 04:20:35 UTC

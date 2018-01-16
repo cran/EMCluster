@@ -1,6 +1,6 @@
 e879eaad64aab8e1f8e63e298f5cea28 *COPYING
-2458bc7ef28f63ffc011640bf5ea5eb2 *ChangeLog
-4dbad1554baeb6904b2dc111113b2338 *DESCRIPTION
+5bf381351a78afff1caddc37ef81ff5b *ChangeLog
+e4fc784bc160e8d46e37220f92784b6d *DESCRIPTION
 0da2d393f20258e1d10d13df53de3ad3 *INSTALL
 9a3b23bbd65131fa55ba5703e342da5a *NAMESPACE
 0f47a8e6731a11682a7ccec481cca0b8 *R/000_globalVariables.r
@@ -33,7 +33,7 @@ fb2bddaccb41bd0cfb99267e19b43779 *R/lmt_q.map.new.r
 9c92d9f48783e1c56bb36ccf666cdabe *R/partial_logL.r
 8dd69523898bdd55f1845f1584bcf67d *R/partial_q.r
 f16eebc3963fc526190671d33cf1db6d *R/post_I_information.r
-71d2d1c9d5a3b447464eb4032f631b7f *R/recolor.r
+66e7302c6ad98013dfb5abf957fda5b4 *R/recolor.r
 99e11cf69954dda1ce031fd443711c3c *R/zzz.r
 510e35b7152251d188cf39b4295c27d3 *README.md
 ad0d7892282061cd4b99b9297a4279ff *cleanup
