@@ -40,7 +40,8 @@ void assign(int n, int p,int k,double **X,double *pi,double **Mu,
 int shortemcluster_org(int n,int p,int k,double *pi,double **X,double **Mu,  
     double **LTSigma,int maxiter,double eps,double *llhdval);
 int shortems(int n,int p,int nclass,double *pi,double **X,double **Mu,  
-    double **LTSigma,int maxshortiter,double shorteps);
+    double **LTSigma,int maxshortiter,double shorteps,
+    int *conv_iter,double *conv_eps);
 
 int initials(double **x,int n,int p,int nclass,int *nc,
     double **Mu,double **LTSigma,int *class);
@@ -62,11 +63,13 @@ void estep_unnorm_dlmvn(int n, int p, int k, double **X, double **Gamma,
     double *pi, double **Mu, double **LTSigma);
 void norm_gamma(int n, int k, double **Gamma, double *pi);
 void emcluster(int n, int p, int k, double *pi, double **X, double **Mu, 
-    double **LTSigma, int maxiter, double eps, double *llhdval);
+    double **LTSigma, int maxiter, double eps, double *llhdval,
+    int *conv_iter, double *conv_eps);
 
 /* Function in "M_init_other.c". */
 int shortemcluster(int n, int p, int k, double *pi, double **X,
-    double **Mu, double **LTSigma, int maxiter, double eps, double *llhdval);
+    double **Mu, double **LTSigma, int maxiter, double eps, double *llhdval,
+    int *conv_iter, double *conv_eps);
 
 /* Functions in "meandispersion.c". */
 void meandispersion_MLE(double **x, int n, int p, double *mu, double *ltsigma);
@@ -76,9 +79,11 @@ void est_ltsigma_mle_given_mu(double **x, int n, int p, double *mu,
 
 /* Functions in "rand_EM.c". */
 int mod_shortemcluster(int n, int p, int k, double *pi, double **X,
-    double **Mu, double **LTSigma, int fixed_iter, double *llhdval);
+    double **Mu, double **LTSigma, int fixed_iter, double *llhdval,
+    int *conv_iter, double *conv_eps);
 void mod_shortems(int n, int p, int nclass, double *pi, double **X,
-    double **Mu, double **LTSigma, int maxshortiter, int fixed_iter);
+    double **Mu, double **LTSigma, int maxshortiter, int fixed_iter,
+    int *conv_iter, double *conv_eps);
 
 /* Functions in "Rtool.c". */
 double** allocate_double_array(int n);
@@ -86,11 +91,13 @@ double** allocate_double_array(int n);
 /* Functions in "M_emgroup.c". */
 int M_emgroup(double **x,int n,int p,int nclass,double *pi,double **Mu,
               double **LTSigma,double *llhdval,int *nc,int *class,
-              double alpha, int em_iter, double em_eps);
+              double alpha, int em_iter, double em_eps,
+              int *conv_iter, double *conv_eps);
 
 /* Functions in "mb_em_EM.c". */
-void shortems_mb(int n, int p, int nclass, double *pi, double **X, double **Mu,  
-    double **LTSigma, int maxshortiter, double shorteps);
+void shortems_mb(int n, int p, int nclass, double *pi, double **X, double **Mu,
+    double **LTSigma, int maxshortiter, double shorteps,
+    int *conv_iter, double *conv_eps);
 
 /* Functions in "mb_init.c". */
 void cut_sub(double **X, int n, int p, int G, int min_n, double lambda,
@@ -100,7 +107,8 @@ void mb_init(double **X, int n, int p, int k, double *pi, double **Mu,
 
 /* Functions in "mb_rand_EM.c". */
 void mod_shortems_mb(int n, int p, int nclass, double *pi, double **X,
-    double **Mu, double **LTSigma, int maxshortiter, int fixed_iter);
+    double **Mu, double **LTSigma, int maxshortiter, int fixed_iter,
+    int *conv_iter, double *conv_eps);
 
 /* Function in "mb_randomEMinit.c". */
 int mb_assign_closest(double **X, int n, int p, int nclass, double **Mu,
@@ -119,9 +127,9 @@ double fcn(double lambda, void *pt_param);
 double find_lambda(void *pt_param);
 
 /* Functions in "ac_EM.c". */
-int shortems_ac(int n, int p, int nclass, double *pi, double **X, double **Mu,  
-    double **LTSigma, int maxshortiter, double shorteps, int n_candidate);
-void mod_shortems_ac(int n, int p, int nclass, double *pi, double **X,
-    double **Mu, double **LTSigma, int maxshortiter, int fixed_iter,
-    int n_candidate);
+//int shortems_ac(int n, int p, int nclass, double *pi, double **X, double **Mu,  
+//    double **LTSigma, int maxshortiter, double shorteps, int n_candidate);
+//void mod_shortems_ac(int n, int p, int nclass, double *pi, double **X,
+//    double **Mu, double **LTSigma, int maxshortiter, int fixed_iter,
+//    int n_candidate);
 

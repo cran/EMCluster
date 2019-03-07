@@ -10,7 +10,7 @@ void init_EM(double **X, double *pi, double **Mu, double **LTSigma,
     double *llhdval,
     int n, int p, int nclass, int *nc, int *class,
     int short_iter, double short_eps, int fixed_iter, int n_candidate,
-    int EM_iter, double EM_eps,
+    int EM_iter, double EM_eps, int *conv_iter, double *conv_eps,
     int *lab, int labK,
     int init_method){
   int j;
@@ -27,17 +27,17 @@ void init_EM(double **X, double *pi, double **Mu, double **LTSigma,
 /* Unsupervised clustering. */
     if(init_method == 1){	/* em.EM */
       shortems(n, p, nclass, pi, X, Mu, LTSigma,
-               short_iter, short_eps);
+               short_iter, short_eps, conv_iter, conv_eps);
     } else if(init_method == 2){	/* Rnd.EM */
       mod_shortems(n, p, nclass, pi, X, Mu, LTSigma,
-                   short_iter, fixed_iter);
+                   short_iter, fixed_iter, conv_iter, conv_eps);
 /* Model-based unsupervised clustering. */
     } else if(init_method == 11){	/* MBem.EM */
       shortems_mb(n, p, nclass, pi, X, Mu, LTSigma,
-                  short_iter, short_eps);
+                  short_iter, short_eps, conv_iter, conv_eps);
     } else if(init_method == 12){	/* MBRnd.EM */
       mod_shortems_mb(n, p, nclass, pi, X, Mu, LTSigma,
-                      short_iter, fixed_iter);
+                      short_iter, fixed_iter, conv_iter, conv_eps);
 /* Adapted candidated unsupervised clustering. */
 //    } else if(init_method == 21){	/* acem.EM */
 //      shortems_ac(n, p, nclass, pi, X, Mu, LTSigma,
@@ -48,20 +48,20 @@ void init_EM(double **X, double *pi, double **Mu, double **LTSigma,
 /* Semi-supervised clustering. */
     } else if(init_method == 101){	/* ss.em.EM */
       ss_shortems(n, p, nclass, pi, X, Mu, LTSigma,
-                  short_iter, short_eps,
+                  short_iter, short_eps, conv_iter, conv_eps,
                   lab, labK);
     } else if(init_method == 102){	/* ss.Rnd.EM */
       ss_mod_shortems(n, p, nclass, pi, X, Mu, LTSigma,
-                      short_iter, fixed_iter,
+                      short_iter, fixed_iter, conv_iter, conv_eps,
                       lab, labK);
 /* Model-based semi-supervised clustering. */
     } else if(init_method == 111){	/* ss.MBem.EM */
       ss_shortems_mb(n, p, nclass, pi, X, Mu, LTSigma,
-                     short_iter, short_eps,
+                     short_iter, short_eps, conv_iter, conv_eps,
                      lab, labK);
     } else if(init_method == 112){	/* ss.MBRnd.EM */
       ss_mod_shortems_mb(n, p, nclass, pi, X, Mu, LTSigma,
-                         short_iter, fixed_iter,
+                         short_iter, fixed_iter, conv_iter, conv_eps,
                          lab, labK);
 /* Adapted candidated semi-supervised clustering. */
 //    } else if(init_method == 121){	/* ss.em.EM */
@@ -121,7 +121,8 @@ void init_EM(double **X, double *pi, double **Mu, double **LTSigma,
        init_method == 11 || init_method == 12){
 //       init_method == 11 || init_method == 12 ||
 //       init_method == 21 || init_method == 22){
-      emcluster(n, p, nclass, pi, X, Mu, LTSigma, EM_iter, EM_eps, llhdval);
+      emcluster(n, p, nclass, pi, X, Mu, LTSigma, EM_iter, EM_eps, llhdval,
+                conv_iter, conv_eps);
       assign(n, p, nclass, X, pi, Mu, LTSigma, class, nc);
 /* Semi-supervised clustering. */
     } else if(init_method == 101 || init_method == 102 ||
@@ -129,7 +130,7 @@ void init_EM(double **X, double *pi, double **Mu, double **LTSigma,
 //              init_method == 111 || init_method == 112 ||
 //              init_method == 121 || init_method == 122){
       ss_emcluster(n, p, nclass, pi, X, Mu, LTSigma, EM_iter, EM_eps, llhdval,
-                   lab);
+                   conv_iter, conv_eps, lab);
       ss_assign(n, p, nclass, X, pi, Mu, LTSigma, class, nc, lab);
 /* For output detail iterations. */
 //    } else if(init_method == -1 || init_method == -11){

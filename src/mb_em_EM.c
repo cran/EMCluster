@@ -8,7 +8,8 @@
 
 /* shortems() for model-based initializer. */
 void shortems_mb(int n,int p,int nclass,double *pi,double **X,double **Mu,  
-    double **LTSigma,int maxshortiter,double shorteps){
+    double **LTSigma,int maxshortiter,double shorteps,
+    int *conv_iter,double *conv_eps){
   int i, iter, totiter = 0, n_par = p * (p + 1) / 2;
   double *oldpi, **oldMu, **oldLTSigma, oldllh = -Inf, llhval;
 
@@ -21,7 +22,7 @@ void shortems_mb(int n,int p,int nclass,double *pi,double **X,double **Mu,
 
     iter = maxshortiter - totiter;
     iter = shortemcluster(n, p, nclass, oldpi, X, oldMu, oldLTSigma, iter,
-                          shorteps, &llhval);
+                          shorteps, &llhval, conv_iter, conv_eps);
     if(llhval >= oldllh){
       oldllh = llhval;
       cpy(oldMu, nclass, p, Mu);
@@ -40,15 +41,18 @@ void shortems_mb(int n,int p,int nclass,double *pi,double **X,double **Mu,
 
 /* This is the model-based em.EM. */
 int mb_em_EM(double **x, int n, int p, int nclass, double *pi, double **Mu,
-    double **LTSigma, double *llhdval, int shortiter, double shorteps){
+    double **LTSigma, double *llhdval, int shortiter, double shorteps,
+    int *conv_iter, double *conv_eps){
   if(nclass == 1){
     meandispersion_MLE(x, n, p, Mu[0], LTSigma[0]);
     *llhdval = -0.5 * n * p - 0.5 * n * log(determinant(LTSigma[0], p)) -
                0.5 * n * p * log(2 * PI);
   }
   else {
-    shortems_mb(n, p, nclass, pi, x, Mu, LTSigma, shortiter, shorteps);
-    emcluster(n, p, nclass, pi, x, Mu, LTSigma, 1000, 0.0001, llhdval);
+    shortems_mb(n, p, nclass, pi, x, Mu, LTSigma, shortiter, shorteps,
+                conv_iter, conv_eps);
+    emcluster(n, p, nclass, pi, x, Mu, LTSigma, 1000, 0.0001, llhdval,
+              conv_iter, conv_eps);
   } 
 
   return 0;
