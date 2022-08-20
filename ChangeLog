@@ -1,3 +1,11 @@
+2022-08-12: Ver. 0.2-14
+  * Use is() to replace class() inside if().
+  * Fix LaTeX symble in man for KaTeX conversion.
+  * Remove PPtree from enhance.
+
+2021-11-06: Ver. 0.2-14
+  * Add e-mail.
+
 2021-03-08: Ver. 0.2-13
   * Add a calloc to "src/R_init_svd.c" to avoid errors detected by valgrind.
   * Change http to https.
