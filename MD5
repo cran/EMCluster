@@ -1,7 +1,7 @@
 4aac11f8ee8da113a8c0c9e29ad6c83c *COPYING
-4ec9a275e98560660e6885b707554b51 *ChangeLog
-640058dca77d12a52db741f6e6d06f6b *DESCRIPTION
-0da2d393f20258e1d10d13df53de3ad3 *INSTALL
+bafe74968baaa8579905f0f63fb67366 *ChangeLog
+177191305d5ff254bafc234dd636a5aa *DESCRIPTION
+787cb3203b30354aa037cccef7028e68 *INSTALL
 e61e0eeb730779c9fbcb128da08d5bee *NAMESPACE
 0f47a8e6731a11682a7ccec481cca0b8 *R/000_globalVariables.r
 61755d9a94ee227b7fb4f56ae8fb022f *R/00_control.r
@@ -56,7 +56,7 @@ ea30937d6eee08aa1cba3a383eb1b10e *demo/oversize_ss.r
 72595e7b0a92d7fa11da1f906dadb7d5 *demo/ppcontour.r
 096518e2721b7d7a7f8535a4a5d96198 *demo/shortem.r
 53d97eac9c26aa30d2c9b0a2dcd74041 *demo/starts_via_svd.r
-231d9f8b217f1b46a66d26bc53175273 *inst/CITATION
+5109dd3f445d7c2f4221851a56627b66 *inst/CITATION
 d9a726608cc931a593172d767d6b2d07 *inst/doc/EMCluster-guide.Rnw
 c08d21f4a0a6936db6085d59ad5e3191 *inst/doc/EMCluster-guide.pdf
 f655f3975e2bba6cf7b4c8ae68bb0a7d *inst/workflow/crabs/0-run.sh
@@ -86,7 +86,7 @@ bb4798e7ff1b2964caf1be7a0b254645 *inst/workflow/iris/3-adjR.r
 0d4876bf3c865c0d534388fb5c7b6ac2 *inst/workflow/iris/4-plot_pp.r
 e818ac02875ebe01db127abdffefe118 *inst/workflow/iris/5-plot_contour.r
 29554d3b4881985865d78cabdef17106 *inst/workflow/iris/6-qmap.r
-bd301403da773e3717ebe524fcd58863 *man/00_EMCluster-package.Rd
+84b7cea6d5aca928a24b8441d632146d *man/00_EMCluster-package.Rd
 e1090ed83d7a07053b0bbcbe27f8cc7a *man/11_d.EMControl.Rd
 c1f93a0c384820ef20e1b9b47bcf4732 *man/12_d.dataset.Rd
 6a05e728cd55411609211c2f7db085e9 *man/21_init.EM.Rd
