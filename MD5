@@ -1,6 +1,6 @@
 4aac11f8ee8da113a8c0c9e29ad6c83c *COPYING
-5bdde536d2bfc00367158510d6838198 *ChangeLog
-c1cba786854fb6109e6cad578328d6c9 *DESCRIPTION
+b0e8b1fc3d6a4afff5ca0400d91d2119 *ChangeLog
+18864d06c02bd4c0f0bbc5a9eefeed87 *DESCRIPTION
 787cb3203b30354aa037cccef7028e68 *INSTALL
 e61e0eeb730779c9fbcb128da08d5bee *NAMESPACE
 0f47a8e6731a11682a7ccec481cca0b8 *R/000_globalVariables.r
@@ -16,7 +16,7 @@ f687b72808bed74270d906918d7ee1a1 *R/fcn_e_step.r
 462d97004494bd7d4bf0971af0579988 *R/fcn_emcluster.r
 9621a5dfe299af61d5eb303c67e6ce56 *R/fcn_emgroup.r
 cf76e1706c8d481ab70f95ba7031d9e6 *R/fcn_ic.r
-02eed7290c486cfc085a9fc27b18dd07 *R/fcn_init_EM.r
+210bccd6df38091a2e228b40cc1133e0 *R/fcn_init_EM.r
 e7ac15926417b5fae8b2e1d67f0301c2 *R/fcn_init_other_shortem.r
 5a185da7b5370110f851938f86199edc *R/fcn_init_svd.r
 2aebe84057cb20a5ec3681d133029a0e *R/fcn_initials.r
